@@ -406,9 +406,9 @@ export default {
     this.getSchoolList()
     this.getArea()
   },
-  updated(){
-    let cur = document.querySelectorAll(".schoolManagementTable > div > .ivu-table-body");
-    this.tableHeight = ( cur[0].clientHeight + 122 ) + 'px'
+  updated () {
+    let cur = document.querySelectorAll('.schoolManagementTable > div > .ivu-table-body')
+    this.tableHeight = (cur[0].clientHeight + 122) + 'px'
   },
   methods: {
     async getSchoolList () {
