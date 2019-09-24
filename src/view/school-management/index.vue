@@ -147,10 +147,14 @@ export default {
               return h(
                 'Select',
                 {
-                  domProps: {
-                    value: params.row.areaid
+                  props: {
+                    value: params.row.areaid,
+                    transfer: true
                   },
                   on: {
+                    input: (e) => {
+                      params.row.areaid = e
+                    },
                     'on-change': function (event) {
                       params.row.areaid = event
                     }
