@@ -50,9 +50,9 @@
       </div>
     </Modal>
     </Card>
-    <Card :style="{'margin-top': '20px'}">
+    <Card class="schoolManagementCard" ref="schoolManagementCard" :style="{'margin-top': '20px','height':tableHeight}">
       <p slot="title">校区列表</p>
-      <Table stripe :columns="schoolColumns" :data="schoolList"></Table>
+      <Table class="schoolManagementTable" ref="schoolManagementTable" stripe :columns="schoolColumns" :data="schoolList"></Table>
       <!-- <Page :total="count" @on-change="changePage"/> -->
       <Page show-total :total="count" :current="currentPage" :page-size="pageSize" @on-change="changePage"/>
     </Card>
@@ -93,6 +93,7 @@ export default {
       updateModalShow: false,
       areaList: [],
       count: 0,
+      tableHeight: 0,
       ruleInline: {
         schoolname: [
           { required: true, message: '请输入学校名称', trigger: 'blur' }
@@ -404,6 +405,10 @@ export default {
   mounted () {
     this.getSchoolList()
     this.getArea()
+  },
+  updated(){
+    let cur = document.querySelectorAll(".schoolManagementTable > div > .ivu-table-body");
+    this.tableHeight = ( cur[0].clientHeight + 122 ) + 'px'
   },
   methods: {
     async getSchoolList () {

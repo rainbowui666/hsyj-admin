@@ -57,4 +57,7 @@ html,body{
 .ivu-notice-title{
   white-space: pre-wrap!important
 }
+.schoolManagementTable .ivu-table-body{
+  position: fixed !important;
+}
 </style>
