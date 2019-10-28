@@ -14,11 +14,11 @@
             <p>你还没有上传{{isAudio ? '音频' : '视频'}}哟</p>
         </template>
         <p class="subTitle" style="margin-top: 20px;">上传{{isAudio ? '音频' : '视频'}}</p>
-        <iframe v-if="isAudio && currentAudio.length < 1" ref="iframe" @load="finish" src="https://cdn.100eduonline.com/admin/audioUpload/uploadAudio.html" height="120" width="100%" style="border: none;overflow:hidden"/>
+        <iframe v-if="isAudio && currentAudio.length < 1" ref="iframe" @load="finish" src="https://hsstatic.sufe.edu.cn/admin/audioUpload/uploadAudio.html" height="120" width="100%" style="border: none;overflow:hidden"/>
         <template v-if="currentAudio.length >= 1">
             <p> 已经有{{isAudio ? '音频' : '视频'}}了哟</p>
         </template>
-        <iframe v-if="!isAudio && currentAudio.length < 1" ref="iframe" @load="finish" src="https://cdn.100eduonline.com/admin/audioUpload/uploadVedio.html" height="120" width="100%" style="border: none;overflow:hidden"/>
+        <iframe v-if="!isAudio && currentAudio.length < 1" ref="iframe" @load="finish" src="https://hsstatic.sufe.edu.cn/admin/audioUpload/uploadVedio.html" height="120" width="100%" style="border: none;overflow:hidden"/>
         <!-- <Button @click="sendMessage">向iframe发送信息</Button> -->
     </div>
 </template>

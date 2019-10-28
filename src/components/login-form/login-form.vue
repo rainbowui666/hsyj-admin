@@ -78,12 +78,12 @@ export default {
   },
   mounted () {
     this.currentRandom = Math.random()
-    this.codeImg = `https://hsapi.100eduonline.com/admin/auth/createCaptcha?v=${this.currentRandom}`
+    this.codeImg = `https://gzhgl.sufe.edu.cn/admin/auth/createCaptcha?v=${this.currentRandom}`
   },
   methods: {
     codeChange () {
       this.currentRandom = Math.random()
-      this.codeImg = `https://hsapi.100eduonline.com/admin/auth/createCaptcha?v=${this.currentRandom}`
+      this.codeImg = `https://gzhgl.sufe.edu.cn/admin/auth/createCaptcha?v=${this.currentRandom}`
     },
     Clear () {
       this.form.userName = ''

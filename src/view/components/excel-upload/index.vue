@@ -1,6 +1,6 @@
 <template>
     <div>
-        <iframe ref="iframe" @load="finish" src="https://cdn.100eduonline.com/admin/excelUpLoad/import.html" height="120" width="100%" style="border: none;overflow:hidden"/>
+        <iframe ref="iframe" @load="finish" src="https://hsstatic.sufe.edu.cn/admin/excelUpLoad/import.html" height="120" width="100%" style="border: none;overflow:hidden"/>
         <!-- <Button @click="sendMessage">向iframe发送信息</Button> -->
     </div>
 </template>

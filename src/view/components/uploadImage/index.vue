@@ -6,7 +6,7 @@
         </div> -->
         <div class="demo-upload-list" v-for="(item,index) in currentImage" :key="index">
           <template v-if="currentImage.length > 0">
-              <img :src="'https://cdn.100eduonline.com/images/'+item.sourceAddress">
+              <img :src="'https://hsstatic.sufe.edu.cn/images/'+item.sourceAddress">
               <div class="demo-upload-list-cover">
                   <Icon size="40px" type="ios-trash-outline" @click.native="handleRemove(item)"></Icon>
               </div>
@@ -18,7 +18,7 @@
         <p class="subTitle" style="border-top: 1px solid #ddd;margin-top: 20px;">上传图片
           <em class="notice">(图片大小不能超过2M，否则无法上传)</em>
         </p>
-        <iframe ref="iframe" @load="finish" src="https://cdn.100eduonline.com/admin/uploadComponent/upload.html" height="120" width="100%" style="border: none;overflow:hidden"/>
+        <iframe ref="iframe" @load="finish" src="https://hsstatic.sufe.edu.cn/admin/uploadComponent/upload.html" height="120" width="100%" style="border: none;overflow:hidden"/>
         <!-- <Button @click="sendMessage">向iframe发送信息</Button> -->
     </div>
 </template>
