@@ -1,0 +1,1 @@
+放在 /usr/local/nginx/html/static/admin
