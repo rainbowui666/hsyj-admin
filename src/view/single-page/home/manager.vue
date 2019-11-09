@@ -101,7 +101,7 @@ export default {
     this.inforCardData = [
       { title: '游客数量', icon: 'md-contacts', count: count.data.tourist, color: '#2d8cf0' },
       { title: '文化景观数量', icon: 'md-pin', count: count.data.scenery, color: '#19be6b' },
-      { title: '参与学生数量', icon: 'md-person', count: count.data.students, color: '#ff9900' },
+      { title: '注册学生数量', icon: 'md-person', count: count.data.students, color: '#ff9900' },
       { title: '评论数量', icon: 'md-chatboxes', count: count.data.discuss, color: '#ed3f14' },
       { title: '开展活动数量', icon: 'md-compass', count: count.data.activity, color: '#E46CBB' }
     ]
